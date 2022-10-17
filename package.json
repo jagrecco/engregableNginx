@@ -1,0 +1,33 @@
+{
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "name": "entregablenginx",
+  "version": "1.0.0",
+  "main": "app.js",
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev":"nodemon app.js",
+    "server": "nodemon server.js",
+    "8082": "nodemon appClusterNginx.js 8082",
+    "8083": "nodemon appClusterNginx.js 8083",
+    "8084": "nodemon appClusterNginx.js 8084",
+    "8085": "nodemon appClusterNginx.js 8085"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jagrecco/entregableSession.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jagrecco/entregableSession/issues"
+  },
+  "homepage": "https://github.com/jagrecco/entregableSession#readme",
+  "description": ""
+}
