@@ -12,7 +12,7 @@
   "scripts": {
     "start": "node app.js",
     "dev":"nodemon app.js",
-    "server": "nodemon server.js",
+    "server": "nodemon server.js 8080",
     "8082": "nodemon appClusterNginx.js 8082",
     "8083": "nodemon appClusterNginx.js 8083",
     "8084": "nodemon appClusterNginx.js 8084",
