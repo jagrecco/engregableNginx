@@ -16,12 +16,14 @@ app.listen(PORT, () => {
     console.log(`Server Port:${PORT}   Worker ${process.pid} started`);
 });
 
+
 app.get('*', (req, res) => {
   console.log(`port: ${PORT} -> fyh: ${Date.now()}`);
-  res.send(  
+  const html=`<div style='border: 1px solid black;padding: 50px;'><h1 style="color:orangered ;">Servidor raíz NGINX</h1> <a target="_blank" style="text-decoration: none; color:darkblue; font-weight: bolder; " href='http://localhost/api/ramdoms/'>Ir a /api/ramdoms</a></div>`
+  res.send(
     `Servidor express <span style="color:blueviolet;">(Nginx)</span> en ${PORT} - <b>PID ${
       process.pid
-    }</b> - ${new Date().toLocaleString()}`
+    }</b> - ${new Date().toLocaleString()}  ${html}`
   );
   
 });
